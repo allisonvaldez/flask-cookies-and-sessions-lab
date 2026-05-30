@@ -33,7 +33,7 @@ def index_articles():
 def show_article(id):
     # Control logic and error handling
     if "page_views" not in session:
-        session["[page_views]"] = 0
+        session["page_views"] = 0
 
     # Increment page view every time route is hit
     session["page_views"] += 1
